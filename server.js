@@ -2,6 +2,9 @@ var express = require('express')
 var app = express()
 var request = require('request')
 
+app.get('/', (req, res) => {
+  res.end('something happened...')
+})
 app.get('/:lat/:long', (req, res) => {
   console.log('APPID is: ' + process.env.APPID)
   var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + req.params.lat + '&lon=' + req.params.long + '&APPID=' + process.env.APPID
