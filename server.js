@@ -4,7 +4,7 @@ var request = require('request')
 
 app.use((req, res, next) => {
 //  res.setHeader('Access-Control-Allow-Origin', 'https://sheltered-mesa-65680.herokuapp.com/')
-  res.setHeader('Access-Control-Allow-Origin', 'https://nameless-citadel-16272.herokuapp.com://nameless-citadel-16272.herokuapp.com/' )
+  res.setHeader('Access-Control-Allow-Origin', 'https://nameless-citadel-16272.herokuapp.com' )
   res.setHeader('Access-Control-Allow-Methods', 'GET')
   next()
 })
