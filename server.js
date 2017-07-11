@@ -20,7 +20,7 @@ app.get('/:lat/:long', (req, res) => {
     if (response) {
       console.log(response)
     }
-    res.json(body)
+    res.json(response)
   })
 })
 
