@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 app.get('/:lat/:long', (req, res) => {
   console.log('request received')
   var api = 'http://api.openweathermap.org/data/2.5/weather?'
-  var url = api + req.params.lat + '&lon=' + req.params.long + '&APPID=' + process.env.APPID
+  var url = api + '&lat=' +  req.params.lat + '&lon=' + req.params.long + '&APPID=' + process.env.APPID
+  console.log(process.env.APPID)
   request(url, (err, response, body) => {
     if (err) {
       console.log(err)
