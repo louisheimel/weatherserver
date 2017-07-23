@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var request = require('request')
-var requesting_site = 'https://nameless-waters-32535.herokuapp.com/'
+var requesting_site = 'https://nameless-waters-32535.herokuapp.com'
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', requesting_site)
